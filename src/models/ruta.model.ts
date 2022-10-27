@@ -25,7 +25,7 @@ export class Ruta extends Entity {
     type: 'string',
     required: true,
   })
-  tiempo_estimado: string;
+  tiempo_estimado: number;
 
 
   constructor(data?: Partial<Ruta>) {

@@ -13,6 +13,12 @@ export class Usuario extends Entity {
     type: 'string',
     required: true,
   })
+  documento: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
   nombre: string;
 
   @property({
@@ -30,8 +36,12 @@ export class Usuario extends Entity {
   @property({
     type: 'string',
   })
-  telefono?: string;
+  telefono: string;
 
+  @property({
+    type: 'string',
+  })
+  password?: string;
 
   constructor(data?: Partial<Usuario>) {
     super(data);
