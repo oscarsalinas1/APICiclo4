@@ -27,7 +27,7 @@ export class AeropuertoController {
     @repository(AeropuertoRepository)
     public aeropuertoRepository : AeropuertoRepository,
   ) {}
-
+  @authenticate.skip()
   @post('/aeropuertos')
   @response(200, {
     description: 'Aeropuerto model instance',
