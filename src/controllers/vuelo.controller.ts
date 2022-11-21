@@ -28,6 +28,7 @@ export class VueloController {
     public vueloRepository : VueloRepository,
   ) {}
 
+@authenticate.skip()
   @post('/vuelos')
   @response(200, {
     description: 'Vuelo model instance',

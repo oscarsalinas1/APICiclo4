@@ -43,7 +43,7 @@ export class Aeropuerto extends Entity {
     type: 'string',
     required: true,
   })
-  siglas: string;
+  sigla: string;
 
   @property({
     type: 'string',
